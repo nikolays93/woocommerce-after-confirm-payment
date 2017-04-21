@@ -1,7 +1,8 @@
 <?php
+
 /**
- * Class Name: After Confirm Payment GateWay
- * Class URI: https://github.com/nikolays93/woocommerce-after-confirm-payment
+ * Plugin Name: After Confirm Payment GateWay
+ * Plugin URI: https://github.com/nikolays93/woocommerce-after-confirm-payment
  * Description: Pay after agreement
  * Version: 0.1
  * Author: NikolayS93

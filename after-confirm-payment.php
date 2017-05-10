@@ -20,5 +20,5 @@ function str_match_cart_item_data( $str ){
     return false;
 }
 
-require_once __DIR__ . "/inc/product-meta.php";
+require_once __DIR__ . "/inc/preorder-product-meta.php";
 require_once __DIR__ . "/inc/custom-gateway.php";

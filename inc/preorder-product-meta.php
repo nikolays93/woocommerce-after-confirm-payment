@@ -45,8 +45,8 @@ function render_meta_on_cart_and_checkout( $cart_data, $cart_item = null ) {
 
 add_filter( 'woocommerce_available_payment_gateways', 'disable_after_order_gateways' );
 function disable_after_order_gateways( $gateways ){
-    if( str_match_cart_item_data('Выслать цветопробу') )
-        unset($gateways['cod']);
+    if( str_match_cart_item_data('Выслать цветопробу') && isset($gateways['after_confirm']) )
+        return array('after_confirm' => $gateways['after_confirm']);
     else
         unset($gateways['after_confirm']);
 
